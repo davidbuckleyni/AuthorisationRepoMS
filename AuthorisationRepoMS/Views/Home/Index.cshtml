@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="text-center">
+
+        <a href="/admin/"> Create a user</a>
+        <a href="/roles/"> Manage Roles</a>
+        <a href="Test">Test Controller</a>
+        <h1 class="display-4">Welcome</h1>
+
+        No matter what I do here the Test Controller is always false even though I place my user into the manager group.
+
+
+        Setps To Reproduce.
+
+        1 Use the login davidbuckleyweb@outlook.com password Test12345!
+        2 Goto the Manage roles Place the user into the managment group.
+        3 Try to access the test controller you will always get access denied even though its decorated with  [Authorize(Roles = "manager")]
+    </div>
